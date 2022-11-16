@@ -46,6 +46,14 @@ class MainActivity : AppCompatActivity() {
                 navController.navigate(R.id.FirstFragment)
                 true
             }
+            R.id.action_third -> {
+                navController.navigate(R.id.ThirdFragment)
+                true
+            }
+            R.id.action_second -> {
+                navController.navigate(R.id.SecondFragment)
+                true
+            }
 
             else -> super.onOptionsItemSelected(item)
         }
