@@ -13,7 +13,7 @@ import edu.cascadia.merge.databinding.FragmentSecondBinding
  */
 private lateinit var binding: FragmentSecondBinding
 
-class SecondFragment : Fragment() {
+class ThirdFragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -29,10 +29,10 @@ class SecondFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.buttonPrev.setOnClickListener {
-            findNavController().navigate(R.id.action_SecondFragment_to_FirstFragment)
+            findNavController().navigate(R.id.action_thirdFragment_to_SecondFragment)
         }
         binding.buttonNext.setOnClickListener {
-            findNavController().navigate(R.id.action_SecondFragment_to_thirdFragment)
+            findNavController().navigate(R.id.action_thirdFragment_to_FirstFragment)
         }
     }
 }
