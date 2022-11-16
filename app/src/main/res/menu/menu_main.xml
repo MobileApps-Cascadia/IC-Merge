@@ -16,14 +16,9 @@
         android:title="@string/first"
         app:showAsAction="ifRoom" />
     <item
-        android:id="@+id/actionThird"
-        android:icon="@drawable/ic_frag_3"
-        android:title="@string/third" />
-
-
-    <item
         android:id="@+id/action_third"
         android:orderInCategory="100"
+        android:icon="@drawable/ic_frag_3"
         app:showAsAction="ifRoom"
         android:title="@string/third_fragment_label" />
 
